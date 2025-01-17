@@ -13,7 +13,7 @@ export const createUser = async (req, res) => {
     res.json({ message: "Sign up Successfull!" });
   } catch (error) {
     console.error(error);
-    res.status(500).send("An error occurred while creating the user");
+    res.status(500).json("An error occurred while creating the user");
   }
 };
 
